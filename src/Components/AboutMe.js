@@ -1,5 +1,4 @@
 import styles from './AboutMe.module.css'
-// import { dataAboutMe } from '..externalFile/'
 
 export const AboutMe=({image, name, profesion, experience, stack, master}) => {
     return (
@@ -21,9 +20,9 @@ export const AboutMe=({image, name, profesion, experience, stack, master}) => {
 
             <div className={styles.containerImgBackground}>
                 <div className={styles.containerImgDev}>
-                    <img 
-                    src={require({image})}
-                    alt='developer man'/>
+                    {/* <img 
+                    src={image}
+                    alt='developer man'/> */}
                 </div>
             </div>
         </div>
