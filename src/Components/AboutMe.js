@@ -21,11 +21,12 @@ export const AboutMe=({image, name, profesion, experience, stack, master}) => {
 
             <div className={styles.containerImgBackground}>
                 <div className={styles.containerImgDev}>
-                    {/* <img src={image} alt='developer man'/> */}
+                    <img 
+                    src={require({image})}
+                    alt='developer man'/>
                 </div>
             </div>
         </div>
     </div>
-                )
-            }
-            // {imageDev}
+    )
+}

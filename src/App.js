@@ -15,7 +15,7 @@ function App() {
           
           <AboutMe 
             key={item.id}
-            // image={item.imgdev}
+            image={item.imgdev}
             name={item.name}
             profesion={item.profesion}
             experience={item.experience}
