@@ -1,0 +1,15 @@
+.containerApp{
+  width: 100%;
+  background-color: rgb(245, 237, 223);
+}
+
+.containerAppHeader{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(40, 42, 52, 0.937);
+}
+
+/* .containerAboutMe{
+  background-color: cyan;
+} */
