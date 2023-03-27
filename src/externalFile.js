@@ -21,10 +21,10 @@ export const dataAboutMe =  [
     {
         id:1,
         imgdev:'./Images/dev-05-500.png',
-        name:'Claudio Muñoz',
-        stack:'Front-End Developer Junior.',
+        name:'Claudio Muñoz.',
         profesion:'computer programmer and system analyst.',
         experience:'20 years of experience in the computer industry.',
+        stack:'Front-End Developer Junior.',
         master:'Full Stack Development Master.',
     }
 ];
