@@ -19,6 +19,9 @@
     color: rgb(242, 170, 38);
 }
 
+.logo span{
+    color:rgb(10, 252, 248);
+}
 .containerMenu{
     width: 50%;
     display: flex;

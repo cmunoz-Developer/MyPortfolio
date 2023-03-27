@@ -2,6 +2,8 @@
  :root{
    --text-color-primary: rgb(235, 199, 132);
    --text-color-secondary: rgb(242, 170, 38);
+   --text-color-terciary:rgb(10, 252, 248);
+
    /* color: rgb(242, 170, 38); */
 
    --font-family-detail: 'Roboto', sans-serif;

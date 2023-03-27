@@ -26,8 +26,8 @@
 .containerOptions li:hover {
     cursor: pointer;
     font-weight: 700;
-    color:aqua;
+    color:var(--text-color-terciary);
     padding:12px 0;
-    border-top:2px solid aqua;
-    border-bottom:2px solid aqua;
+    border-top:2px solid var(--text-color-terciary);
+    border-bottom:2px solid var(--text-color-terciary);
 }
