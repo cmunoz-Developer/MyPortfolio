@@ -19,6 +19,7 @@ function App() {
             name={item.name}
             profesion={item.profesion}
             experience={item.experience}
+            experience2={item.experience2}
             stack={item.stack}
             master={item.master}
           />
@@ -30,9 +31,3 @@ function App() {
 }
 
 export default App;
-// imagenDev="dev04380380"
-// name="Claudio Muñoz"
-// profesion="Programmer Computer"
-// experience="20 years of experience in the computer industry."
-// stack="Frontend developer Junior"
-// master="Full Stack Development JUNIOR"

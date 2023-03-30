@@ -19,15 +19,14 @@
     display: flex;
     justify-content: center;
     list-style: none;
-    color:#fff;
     text-transform: uppercase;
+    color:#fff;
 }
 
 .containerOptions li:hover {
     cursor: pointer;
     font-weight: 700;
     color:var(--text-color-terciary);
-    padding:12px 0;
-    border-top:2px solid var(--text-color-terciary);
+    padding-bottom: 4px;
     border-bottom:2px solid var(--text-color-terciary);
 }

@@ -1,22 +1,24 @@
- /* Variables */
- :root{
-   --text-color-primary: rgb(235, 199, 132);
-   --text-color-secondary: rgb(242, 170, 38);
-   --text-color-terciary:rgb(10, 252, 248);
-
-   /* color: rgb(242, 170, 38); */
-
-   --font-family-detail: 'Roboto', sans-serif;
- }
-
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Variables */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   
+  }
+  :root{
+    --text-color-primary: rgb(235, 199, 132);
+    --text-color-secondary: rgb(242, 170, 38);
+    --text-color-terciary:rgb(10, 252, 248);
+    
+    /* color: rgb(242, 170, 38); */
+    
+    --font-family-detail: 'Roboto', sans-serif;
+  }
   
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

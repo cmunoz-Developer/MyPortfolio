@@ -1,11 +1,15 @@
 .containerHeader{
+    position: fixed;
     width: 100%;
     height: 90px;
     max-width: 1580px;
-
+    
     display: flex;
     justify-content: space-around;
     color:#fff;
+
+    background-color: rgb(30, 30, 30);
+    z-index:1;
 }
 
 .logo {
