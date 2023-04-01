@@ -29,4 +29,5 @@
     color:var(--text-color-terciary);
     padding-bottom: 4px;
     border-bottom:2px solid var(--text-color-terciary);
+    transition: all .09s ease-out;
 }

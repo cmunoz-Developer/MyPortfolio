@@ -14,7 +14,7 @@
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
-    width: 700px;
+    width: 650px;
     padding: 15px;
     box-sizing: border-box;
     border-radius: 12px;
@@ -23,17 +23,15 @@
     filter:drop-shadow(-2px -2px 8px rgba(2, 230, 230, 0.639));
 }
 
-.containerCard h1{
+h1 {
     display: flex;   
     justify-content: center; 
     font-size: 1.5rem;
     font-weight: 400;
-    /* font-style: italic; */
-
-    line-height: .3rem;
+    line-height: .38em;
     letter-spacing: .04rem;
-    padding: .35rem 0px;
     color: var(--text-color-secondary);
+    margin: .4em 0px;
 }
 
 .textDetails{
@@ -44,14 +42,14 @@
     letter-spacing: .025rem;
     line-height: 1.5rem;
     color:#dadada;
-
-    padding-bottom: .25em 0px;
     border-radius: 12px;
+
+    padding:.85rem 0px .35rem .25rem;
 }
 
 .ImgDev {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     background: url('../Images/dev-04-380-380.png') center center no-repeat;
     object-fit: cover;
     background-position: -7px 7px;
@@ -59,11 +57,12 @@
     transform:scaleX(-1);
     
     float: left;
-    margin-right: 2em;
-    margin-bottom: 0.5em;
+    margin-right: 1.8em;
+    margin-bottom: .1em;
     shape-outside: circle();
+
     border-radius: 50%;
-    border: 4px solid var(--text-color-secondary);
+    border: 2px solid var(--text-color-secondary);
     background-color: rgba(44, 135, 138, 0.496);
 }
 
@@ -73,20 +72,23 @@
     font-weight: 500;
     letter-spacing: .05rem;
     color:var(--text-color-secondary);
+    font-style: italic;
     text-transform:uppercase;
     margin-left: 8px;
 }
 
 .textProfesion {
-    font-style: italic;
-    font-weight: 400;
+    font-weight:300;
     color:var(--text-color-secondary);
-    margin-left: 4px;
+}
+
+.lineStack,
+.lineMaster {
+    padding:0px 1.5rem 0px;
 }
 
 .textStack,
 .textMaster {
-    font-weight: 500;
-    font-style: italic;
+    font-weight: 400;
     color:var(--text-color-secondary)
 }
