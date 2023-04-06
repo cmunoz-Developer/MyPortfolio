@@ -7,7 +7,7 @@ export function Header() {
     return (
     <div className={styles.containerHeader}>
         <div className={styles.logo}>
-            <p>cmunoz<span>Developer</span></p>
+            <p>cmunoz <span>Developer</span></p>
         </div>
         <div className={styles.containerMenu}>
             { mainMenu.map((item) =>(

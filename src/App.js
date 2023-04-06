@@ -1,5 +1,4 @@
 import './App.css'
-
 import { Header } from './Components/Header'
 import { AboutMe } from './Components/AboutMe';
 import { dataAboutMe } from './externalFile';
@@ -9,13 +8,15 @@ function App() {
     <div className='containerApp'>
       <div className='containerAppHeader'>
         <Header />
-      </div> 
+      </div>
+
       <div className='containerAboutMe'>
         { dataAboutMe.map((item)=>(
           
           <AboutMe 
             key={item.id}
-            // image={item.imgdev}
+            image={item.imgDev}
+            altImagen={item.altImage}
             name={item.name}
             profesion={item.profesion}
             experience={item.experience}

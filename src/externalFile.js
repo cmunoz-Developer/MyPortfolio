@@ -20,7 +20,8 @@ export const mainMenu = [
 export const dataAboutMe =  [
     {
         id:1,
-        imgdev:'./Images/dev-05-500.png',
+        imgDev:'devsmall.png',
+        altImage:'Developer man',
         name:'Claudio Muñoz.',
         profesion:'Computer Programmer and System Analyst.',
         experience:'I have more than 20 years of experience in the computer industry,',

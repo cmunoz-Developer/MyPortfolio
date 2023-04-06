@@ -1,69 +1,106 @@
-.containerAboutMe{
+.containerAboutMe {
+    display: flex;
+    justify-content: space-around;
+    padding:0 30px;
     width: 100%;
     max-width: 1580px;
     height: 100vh;
     margin: 0 auto;
-
-    background: linear-gradient(rgba(5,7,12,.75), rgba(5,7,12,.75)), url('../Images/bg-08.png') no-repeat center center;
-    background-size: cover ;
-    background-position: 0px 50px;
+    background-color: rgba(224, 224, 223, 0.965);
 }
 
-.containerCard{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    width: 650px;
-    padding: 15px;
-    box-sizing: border-box;
+.imgWrapper {
+    position: relative;
+    overflow: hidden;
+    width: 40%;
+    height: 400px;
+    top: 33%;
     border-radius: 12px;
-    border:2px solid rgba(74, 73, 73, 0.526);
-    background-color: rgba(8, 8, 8, 0.71);
-    filter:drop-shadow(-2px -2px 8px rgba(2, 230, 230, 0.639));
+}
+
+.imgWrapper > .wrapperCard img {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.imgWrapper:hover > img.blur {
+    filter: blur(5px);
 }
 
 h1 {
-    display: flex;   
-    justify-content: center; 
-    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color:var(--text-color-secondary);
     font-weight: 400;
     line-height: .38em;
     letter-spacing: .04rem;
-    color: var(--text-color-secondary);
-    margin: .4em 0px;
+    padding:.65rem 0px;
 }
 
-.textDetails{
-    width: 100%;
-    font-family: var(--font-family-detail);
+.imgWrapper > .textDescription {
+    position: absolute;
+    z-index: 2;
+    inset: 0;
     font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: .025rem;
-    line-height: 1.5rem;
-    color:#dadada;
-    border-radius: 12px;
-
-    padding:.85rem 0px .35rem .25rem;
+    align-items: center;
+    letter-spacing: .03rem;
+    line-height: 1.43rem;
+    color:#e0dfdf;
+    padding: 0 1.95rem;
+    background: rgba(61, 61, 61, 0.484);
 }
 
-.ImgDev {
-    width: 180px;
-    height: 180px;
-    background: url('../Images/dev-04-380-380.png') center center no-repeat;
-    object-fit: cover;
-    background-position: -7px 7px;
-    background-size: 100%;
-    transform:scaleX(-1);
-    
-    float: left;
-    margin-right: 1.8em;
-    margin-bottom: .1em;
-    shape-outside: circle();
+.imgWrapper > img,
+.imgWrapper > .textDescription {
+    transition: 600ms ease-in-out;
+}
 
+.imgWrapper > .textDescription.slideUp {
+    transform: translateY(100%);
+}
+
+.imgWrapper:hover > .textDescription.slideUp {
+    cursor: pointer;
+    transform: translateY(0);
+}
+
+.containerImageDeveloper {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 0 16px 0 12px;
+    transform: scaleX(-1);
+    float: left;
+    left: -20px;
+    object-fit: fill;
+    object-position: 0px 15px;
     border-radius: 50%;
-    border: 2px solid var(--text-color-secondary);
-    background-color: rgba(44, 135, 138, 0.496);
+    border:4px double var(--text-color-secondary);
+    background-color: rgba(225, 225, 225, 0.55);
+    /* background-color: rgba(73, 149, 145, 0.894); */
+}
+
+.wrapperCard > .About {
+    position: relative;
+    top:-420px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.1rem;
+    font-weight: 500;
+    letter-spacing: 1rem;
+
+    color:var(--text-color-terciary);
+    border-radius: 12px;
+    background-color: rgba(255, 0, 0, 0.356);
+    z-index: 10;
+}
+
+.wrapperCard:hover > .About {
+    cursor: pointer;
+    opacity: 0;
 }
 
 .name {
@@ -77,18 +114,98 @@ h1 {
     margin-left: 8px;
 }
 
-.textProfesion {
-    font-weight:300;
-    color:var(--text-color-secondary);
+.name:hover,
+.textProfesion:hover,
+.textStack:hover,
+.textMaster:hover {
+    color: var(--text-color-terciary);
+    cursor:pointer;
 }
 
-.lineStack,
-.lineMaster {
-    padding:0px 1.5rem 0px;
+.textProfesion {
+    font-weight:400;
+    color:var(--text-color-secondary);
 }
 
 .textStack,
 .textMaster {
     font-weight: 400;
     color:var(--text-color-secondary)
+}
+
+.wrapperWelcomeSiteWeb{
+    position: relative;
+    width: 35%;
+    /* width: 450px; */
+    height: 53vh;
+    
+    top: 300px;
+    
+    font-weight: 400;
+    letter-spacing: .045rem;
+
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #333333 #f1f1f1;
+
+    border-radius: 8px;
+    padding: 1rem 0;
+    background-color: #eee;
+}
+.wrapperWelcomeSiteWeb::-webkit-scrollbar {
+  width: 8px;
+}
+
+.wrapperWelcomeSiteWeb::-webkit-scrollbar-thumb {
+  background-color: #0cb1c7;
+}
+
+.wrapperWelcomeSiteWeb::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.wrapperWelcomeSiteWeb > h2 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem 0px;
+}
+
+.wrapperWelcomeSiteWeb > p {
+    padding:0 20px;
+    font-weight: 300;
+    line-height: 1.25rem;
+    color:#4f4f4f;
+}
+.wrapperWelcomeSiteWeb > p > span,
+.linkedin {
+    font-weight: 400;
+    color:#333333
+}
+
+/* Hover */
+.wrapperWelcomeSiteWeb:hover {
+    cursor:pointer;
+    box-shadow: 1px 1px #c0c0c19a, .028rem 1rem 2.8rem #4f4f4fa5;
+    border-radius: 8px;
+    background-color: #333333;
+}
+
+.wrapperWelcomeSiteWeb:hover > p,
+.wrapperWelcomeSiteWeb:hover > h2 {
+    color:#e0dfdf;
+}
+
+.wrapperWelcomeSiteWeb:hover > p > span,
+p > a > .linkedin:hover {
+    color:rgb(0, 179, 255);
+    border-bottom: 2px solid red;
+}
+
+
+/* Revisar el funcionamiento del hover acá */
+.linkedin:hover {
+    color:red;
+    border-bottom: 2px solid rgb(0, 179, 255);
+
 }
