@@ -1,0 +1,80 @@
+.wrapperScroll{
+    position: absolute;
+    max-width: 500px;
+    width: 100%;
+    height: 600px;
+    font-weight: 400;
+    letter-spacing: .045rem;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #333333 #f1f1f1;
+    border-radius: 8px;
+    padding: 1rem 10px;
+    background-color: #eee;
+}
+
+.wrapperScroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.wrapperScroll::-webkit-scrollbar-thumb {
+  background-color: #0cb1c7;
+}
+
+.wrapperScroll::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.title:hover {
+    color: #fff;
+}
+
+.wrapperScroll > {
+    padding: 1rem 50px;
+    border-radius: 8px;
+}
+
+.wrapperScroll > p {
+    position: relative;
+    padding:0 20px;
+    font-weight: 300;
+    line-height: 1.25rem;
+    color:#4f4f4f;
+}
+
+.wrapperScroll > p > span,
+.linkedin,
+.gitHub {
+    font-weight: 400;
+    color:#4f4f4f;
+}
+
+/* Hover Styles */
+.wrapperScroll:hover{
+    cursor: pointer;
+    color:#e0dfdf;
+    filter: drop-shadow(15px 10px 65px rgba(168, 79, 246, 0.837));
+    background-color: #333333;
+}
+.wrapperScroll:hover > title,
+.wrapperScroll:hover > p { 
+    color:#e0dfdf;
+}
+
+.wrapperScroll > .linkedin:hover,
+.wrapperScroll:hover > p > a > span {
+    color:#00b3ff;
+    border-bottom: 1px solid red;
+}
+
+.wrapperScroll > p > a > span:hover {
+    color:#04fba0;
+    font-weight: 500;
+    border-bottom: 2px solid #e3b10e;
+}

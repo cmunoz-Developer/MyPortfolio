@@ -15,4 +15,6 @@
 
 body {
   font-family: var(--font-family-detail);
+  background-color: rgb(245, 237, 223);
+
 }

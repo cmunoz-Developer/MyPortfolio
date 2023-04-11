@@ -1,16 +1,57 @@
 .containerApp{
-  width: 100%;
-  background-color: rgb(245, 237, 223);
-}
-.containerAppHeader {
-  position: fixed;
-  width: 100vw;
-  height: 90px;
-  background-color: #000;
-}
-
-.containerAppHeader {
-  width: 100%;
+  overflow: hidden;
   display: flex;
   justify-content: center;
+}
+
+.containerHeader {
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 90px;
+  background-color: rgb(30, 30, 30);
+}
+
+.wrapperComponentAboutMe {
+  width: 1580px;
+  height: calc(100vh - 90px);
+  margin-top:90px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #faf5e3;
+}
+
+.bgApp {
+  position: absolute;
+  width: 100%;
+  max-width: 1580px;
+  height: 100%;
+  background: linear-gradient(rgba(5, 7, 12, .45), rgba(5, 7, 12, .75)), url(./Images/bgAboutMe.png) no-repeat center center fixed;
+  background-size: cover;
+  background-position: top;
+}
+
+/* @media (min-width=1850px) {
+  .wrapperComponentAboutMe {
+    background-size: 70%;
+    background-color: aquamarine;
+  }
+} */
+
+/* 
+.bgApp {
+} */
+
+.wrapperAboutMe {
+  border: 2px solid #000;
+  border-radius: 12px;
+}
+
+.wrapperCompScrollY {
+  width: 30%;
+  height: 600px;
 }
